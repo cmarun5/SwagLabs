@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT" verbose="5">
+  <test thread-count="5" name="Test(failed)" verbose="5">
+    <classes>
+      <class name="testcase.SwagLabs">
+        <methods>
+          <include name="startReport"/>
+          <include name="preCondition"/>
+          <include name="stopReport"/>
+          <include name="salesforceTest" invocation-numbers="0"/>
+          <include name="setup"/>
+          <include name="postCondition"/>
+          <include name="testDetail"/>
+        </methods>
+      </class> <!-- testcase.SwagLabs -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->
