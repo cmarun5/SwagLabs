@@ -3,6 +3,7 @@ package pages;
 import java.io.IOException;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 
 import com.aventstack.extentreports.ExtentTest;
@@ -16,8 +17,9 @@ public class CheckOutPage extends ProjectSpecificMethod {
 	}
 	public CheckOutPage clickCheckOut () throws IOException {
 		try {
-		
-			driver.findElement(By.xpath("//a[text()='CHECKOUT']")).click();
+			Thread.sleep(5000);
+			WebElement checkOut = driver.findElement(By.xpath("//button[text()='Checkout']"));
+			driver.executeScript("arguments[0].click();",checkOut);
 			reportStep("CheckOut clicked Successfully", "pass");
 		} catch (Exception e) {
 			reportStep("CheckOut not clicked Successfully", "fail");

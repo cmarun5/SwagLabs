@@ -75,7 +75,7 @@ public class ProjectSpecificMethod {
 		options.addArguments("--disable-notifications");
 		options.addArguments("--enable-javascript");
 		driver.manage().window().maximize();
-		driver.get("https://www.saucedemo.com/v1/index.html");
+		driver.get("https://www.saucedemo.com/");
 		driver.manage().timeouts().implicitlyWait(Duration.ofMillis(30));
 		
 	}
