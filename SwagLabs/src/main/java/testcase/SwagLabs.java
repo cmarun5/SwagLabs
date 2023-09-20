@@ -22,7 +22,7 @@ public class SwagLabs extends ProjectSpecificMethod {
 		
 		public void salesforceTest(String uname, String pwd, String FName, String LName,String PCode) throws IOException {
 			LoginPage lpage=new LoginPage(driver,node);
-			lpage.enterUserName(uname).enterPassWord(pwd).clickLogInButton().SelectHighToLow()
+			lpage.enterUserName(uname).enterPassWord(pwd).clickLogInButton().clickMenu().clickAbout().SelectHighToLow()
 			.SelectItem1().cartButton()
 			.clickCheckOut().enterFirstName(FName).enterLastName(LName).enterPostalCode(PCode).clickSubmit().clickFinish().checkValidation();
 			
